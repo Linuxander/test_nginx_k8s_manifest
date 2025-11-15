@@ -1,0 +1,10 @@
+1. Get the service URL by running:
+  kubectl port-forward service/nginx-service 8000:8000
+
+2. Access nginx at:
+  http://localhost:8000
+
+3. To verify deployment:
+  kubectl get deployments -l app=nginx
+  kubectl get services -l app=nginx
+  kubectl get pods -l app=nginx
